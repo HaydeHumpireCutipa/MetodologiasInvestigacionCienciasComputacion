@@ -1,0 +1,115 @@
+\documentclass[xcolor={dvipsnames}]{beamer}
+
+\mode<presentation> {
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[brazil]{babel}
+    \usepackage{csquotes}
+    \usepackage{float}
+    \usepackage{verbatim}
+
+    \bibliographystyle{plain}
+
+    \usetheme{Madrid}
+    \usecolortheme{ipbutfpr}
+
+    \setbeamertemplate{caption}[numbered]
+    \setbeamertemplate{bibliography item}{\insertbiblabel}
+    \setbeamertemplate{frametitle continuation}{\gdef\beamer@frametitle{}}
+
+    \setbeamertemplate{footline}{
+        \leavevmode%
+        \hbox{%
+            \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+                \usebeamerfont{author in head/foot}\insertshortauthor
+            \end{beamercolorbox}%
+            \begin{beamercolorbox}[wd=.6\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+                \usebeamerfont{title in head/foot}\insertshorttitle\hspace*{6em}
+                \insertframenumber{} / \inserttotalframenumber\hspace*{1ex}
+            \end{beamercolorbox}
+        }%
+        \vskip0pt%
+    }
+
+    \setbeamertemplate{navigation symbols}{}
+}
+
+\usepackage[language=brazil, style=numeric, sorting=none]{biblatex}
+\addbibresource{main.bib}
+\makeatletter
+
+\makeatother
+
+\title[Proyectos I]{ Metodologías de Investigación en Ciencias de la Computación}
+
+\author[Humpire Hayde - Salcedo Melvin]{ Humpire Cutipa Hayde Luzmila, Salcedo Almiron Melvin David}
+
+\institute[IPB]{\normalsize
+    Dr.(c) Wilber Ramos Lovon  
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.17\textwidth]{images/Unsa.png}
+        %\includegraphics[width=0.4\textwidth]{images/cs.png}
+    \end{figure}
+}
+\date{\small Escuela Profesional de Ciencia de la Computación \\ 20 de Mayo de 2019}
+
+%Arquitectura
+%Metodo de procesamiento
+%Metodo de almacenamiento
+%Resultados
+%Conclusiones
+%Consumo de recursos, arquitectura de la lap? 
+
+
+\begin{document}
+    \frame{\titlepage}
+    
+    %----SLIDES----%
+    \begin{frame}{Tabla de Contenidos}
+        \tableofcontents
+    \end{frame}
+    
+    \section{Introducción}
+    \include{capitulos/1.Introduccion}
+    
+    \section{Tipos de metodologías de investigación en Cs}
+    \subsection{Metodologías formales}
+    \subsection{Metodologías experimentales}
+    \subsection{Metodologías de construcción}
+    \subsection{Metodologías de procesos}
+    \subsection{Metodologías de modelo}
+    \include{capitulos/2.TiposMetodologia}
+    
+    
+    \section{Punto de partida de la investigación}
+    \subsection{Elegir tema}
+    \subsection{Planteamiento del problema}
+    \subsection{Hipótesis y variables de la investigación}
+    \subsection{Objetivos de la investigación}
+    \subsection{Evaluación y implementación}
+    \include{capitulos/3.PuntoPartida}
+
+    \section{Publicación de un articulo}
+    \subsection{Estructura del articulo}
+    \subsection{Donde publicar}
+    \include{capitulos/4.PublicacionArticulos}
+    %--------------%
+
+   % \frame{\titlepage}
+
+    \section{Referencias}
+    \begin{frame}[allowframebreaks]
+        \frametitle{Referencias}
+        \printbibliography
+        \begin{enumerate}
+            \item [1] Introduction SCC5933 – Research Methodology in Computer Science - Instituto de Ciências Matemáticas e de Computação – USP
+            \item [2] Research/Scientific Methods in Computer Science
+            \item [3] Computer Science Research Methods and Writing Workshop Department of Computer Science Iowa State University \url{http://www.cs.iastate.edu/~honavar/research-methods-workshop.html}
+            \item [4] Web of Science \url{https://www.fecyt.es/en/tematica/web-science}
+            \item [5] Top Computer Science Conferences \url{http://www.guide2research.com/topconf/} 
+            \item [6] Scimago Lab, Copyright 2007-2019. Data Source: Scopus \url{https://www.scimagojr.com/}
+        \end{enumerate}
+    \end{frame}
+\end{document}
